@@ -1,0 +1,140 @@
+body{
+  margin: 0px;
+}
+/* portada */
+.portada{
+  background-size: cover;
+  padding: 5px;
+  /* margin-bottom: 70px; */
+  height: 600px;
+  background-image: url('../imagenes/fondo.jpg');
+  background-size: cover;
+}
+.logotipo{
+  display: inline;
+  border: 2px solid red;
+  padding: 10px;
+}
+/* menu de navegacion */
+.menu{
+  padding: 5px;
+  /* border: 2px solid red; */
+  border-collapse: collapse;
+  display: inline-block;
+  right: 55px;
+  position: absolute;
+}
+.menu li{
+  display: inline-block;
+
+}
+.menu a{
+font-size: 25px;
+font-family: 'Lora', serif;
+text-decoration: none;
+color: black;
+margin: 0px 25px 0px 25px;
+color: #f5f7f2;
+font-weight: 600;
+font-family: monospace;
+}
+
+/* contenido de portada   */
+.divPrincipal{
+    /* border: 2px solid red; */
+    margin: 250px 0px 0px 0px;
+    text-align: center;
+}
+
+/* ---titulos --- */
+.titulo{
+  font-size: 55px;
+  font-family: 'Lora', serif;
+  margin: -41px 0px 0px 280px;
+  color: #f5f7f2;
+}
+.titulo2{
+  font-size: 25px;
+    color: #f5f7f2;
+    text-align: center;
+    margin: 0px 0px 0px 280px;
+}
+.titulo3{
+  font-size: 12px;
+  text-decoration: none;
+  color: #f5f7f2;
+  text-align: center;
+  margin-left: 280px;
+}
+/* Sobre mi  */
+.SeccionPrincipal{
+  height: 600px;
+  background-color: #FFFFFF;
+
+}
+
+h2{
+  text-align: center;
+}
+/* seccion Sobre mi */
+.titulo4{
+  font-size: 55px;
+  font-family: 'Lora', serif;
+  margin: 0px 280px 0px 0px;
+  color: #a36d53;;
+  padding-top: 70px;
+}
+
+/* footer */
+
+.footer{
+  padding: 70px;
+  background-color: #a36d53;
+}
+
+.contacto{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.contacto a{
+  text-decoration: none;
+  color: white;
+  margin: 10px 10px 10px 0px;
+
+}
+.form1{
+
+      display: inline-block;
+      margin: auto;
+}
+.form {
+  color: white;
+}
+.alinearFilas{
+      display: grid;
+
+}
+.alinearItems{
+  display: flex;
+}
+
+.titulo6{
+  font-size: 15px;
+    color: #f5f7f2;
+    text-align: center;
+    margin: auto;
+}
+.centrar{
+  margin: auto;
+  /* margin-bottom: 29px; */
+}
+/* Estructura General de las Sub Ventanas*/
+
+.barraPrincipal{
+
+height: 60px;
+width: auto;
+background-color:#a36d53;
+}
