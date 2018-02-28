@@ -1,5 +1,11 @@
+/* generales */
 body{
   margin: 0px;
+}
+.contenedor{
+  width: 800px;
+  margin: auto;
+  border: 1px solid red;
 }
 /* portada */
 .portada{
@@ -42,33 +48,35 @@ font-family: monospace;
 /* contenido de portada   */
 .divPrincipal{
     /* border: 2px solid red; */
-    margin: 250px 0px 0px 0px;
-    text-align: center;
-}
+    /* margin: 250px 0px 0px 0px; */
+    margin-top: 18%;
 
+    text-align: center;
+    background-color: #ffffffa1;
+    /* padding: 56px; */
+}
 /* ---titulos --- */
 .titulo{
   font-size: 100px;
   font-family: 'Rufina', serif;
-  margin: -41px 0px 0px 280px;
-  color: #f5f7f2;
-
-margin: -78px 0px 0px 280px;
-
-transform: rotate(-0.5deg);
+  margin: 0px;
+  color:black;
+  transform: rotate(-0.5deg);
 }
 .titulo2{
     font-size: 25px;
-    color: #f5f7f2;
+    /* color: #f5f7f2; */
+    color:black;
     text-align: center;
-    margin: 0px 0px 0px 280px;
+    margin: 0px;
 }
 .titulo3{
   font-size: 12px;
   text-decoration: none;
-  color: #f5f7f2;
+  margin: -4px 0px 18px 0px;
+  /* color: #f5f7f2; */
+  color:black;
   text-align: center;
-  margin-left: 280px;
 }
 /* Sobre mi  */
 .SeccionPrincipal{
@@ -81,6 +89,9 @@ h2{
   text-align: center;
 }
 /* seccion Sobre mi */
+section{
+  grid-column: auto;
+}
 .titulo4{
   font-size: 55px;
   font-family: 'Lora', serif;
@@ -88,15 +99,24 @@ h2{
   color: #9E322A;
   padding-top: 70px;
 }
+.articulo{
+  color: black;
+  font-family:'Lora', serif;
+}
+
+
 
 /* footer */
 
 .footer{
-  padding: 70px;
   /* background-color: #a36d53; */
   background-color: #9E322A;
 
 }
+/* .footer .contenedor {
+    display: flex;
+    justify-content: space-between;
+} */
 
 .contacto{
 
