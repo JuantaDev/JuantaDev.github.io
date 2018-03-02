@@ -3,9 +3,9 @@ body{
   margin: 0px;
 }
 .contenedor{
-  width: 800px;
+  max-width: 800px;
   margin: auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* portada */
 .portada{
@@ -17,9 +17,8 @@ body{
   background-size: cover;
 }
 .logotipo{
-  display: inline;
-  border: 2px solid red;
-  padding: 10px;
+  border: 1px solid black;
+  border-radius: 9px;
 }
 /* menu de navegacion */
 .menu{
@@ -43,17 +42,15 @@ margin: 0px 25px 0px 25px;
 color: #f5f7f2;
 font-weight: 600;
 font-family: monospace;
+text-shadow: 0 0 20px #dddddd;
 }
 
 /* contenido de portada   */
 .divPrincipal{
-    /* border: 2px solid red; */
-    /* margin: 250px 0px 0px 0px; */
     margin-top: 18%;
-
+    border: 2px solid white;
     text-align: center;
     background-color: #ffffffa1;
-    /* padding: 56px; */
 }
 /* ---titulos --- */
 .titulo{
@@ -82,6 +79,7 @@ font-family: monospace;
 .SeccionPrincipal{
   height: 600px;
   background-color: #FFFFFF;
+  display:  flex;
 
 }
 
@@ -102,6 +100,17 @@ section{
 .articulo{
   color: black;
   font-family:'Lora', serif;
+  width: 350px;
+  padding: 15px;
+  /* border: 1px solid red; */
+}
+.imagen{
+    width: 350px;
+    height: 350px;
+    margin-top: 100px;
+    border: 2px solid black;
+    border-radius: 22px;
+
 }
 
 
@@ -112,6 +121,12 @@ section{
   /* background-color: #a36d53; */
   background-color: #9E322A;
 
+}
+.footer input{
+  margin: 2px;
+}
+.footer label{
+  color: white;
 }
 /* .footer .contenedor {
     display: flex;
@@ -147,7 +162,7 @@ section{
 }
 
 .titulo6{
-  font-size: 15px;
+  font-size: 10px;
     color: #f5f7f2;
     text-align: center;
     margin: auto;
@@ -163,4 +178,157 @@ section{
 height: 60px;
 width: auto;
 background-color:#9E322A;
+}
+
+
+
+
+/* Responsive Desing   */
+
+/* Media Query para contenedor*/
+@media screen and (max-width: 800px){
+
+   .titulo{
+     font-size: 75px;
+   }
+   .divPrincipal{
+     margin-top: 8%;
+     /* width: auto; */
+
+   }
+   .portada{
+     height: auto;
+   }
+   .SeccionPrincipal{
+     height: auto;
+   }
+   .articulo {
+
+     text-align: center;
+    /* width: auto; */
+        font-size: 12px;
+
+   }
+   .titulo4{
+     padding: 10px;
+    font-size: 43px;
+    margin: 0px;
+   }
+   .imagen{
+     margin: auto;
+     width: 250px;
+    height: 250px;
+   }
+   .footer{
+     padding-top: 10px;
+   }
+   .footer textarea{
+     height: 50px;
+   }
+}
+
+/* Para dispositivos móviles */
+@media screen and (max-width: 650px){
+.menu{
+  position: static;
+}
+.menu li{
+  margin: 0px;
+
+  }
+  .menu a{
+    color:black;
+
+   }
+header{
+    text-align:left;
+}
+.SeccionPrincipal{
+  display: inline-block;
+}
+.titulo4{
+  padding: 10px;
+ font-size: 23px;
+ margin: 0px;
+}
+.imagen{
+  margin: auto;
+  width: 150px;
+ height: 150px;
+}
+.articulo{
+  padding: 5px 10px 5px 10px;
+  width: auto;
+}
+.footer{
+  font-size: 12px;
+}
+.footer input{
+  width: 195px;
+  height: auto;
+  margin: 2px;
+}
+.footer textarea{
+  width: 195px;
+  margin-bottom:  5px;
+}
+
+.logotipo{
+  width: 114px;
+  height: 50px;
+}
+.alinearItems{
+  display: block;
+}
+.alinearItems a{
+ margin: auto;
+}
+.form1{
+ display: table;
+ margin-top: 5px;
+
+}
+}
+@media screen and (max-width:300px){
+   .menu li{
+     padding: 2px 0px;
+      border-bottom: 1px solid white;
+      margin: 0;
+
+   }
+   .menu li:first-child{
+      border-top: 1px solid white;
+   }
+   .menu a{
+     font-size: 20px;
+     color: white;
+      text-shadow: 0 0 20px black;
+   }
+   .titulo{
+     font-size: 50px;
+   }
+   .titulo2{
+      font-size: 20px;
+   }
+   .titulo3{
+     font-size: 10px;
+   }
+   .articulo p{
+     font-size: 10px;
+   }
+   .imagen{
+     width: 125px;
+     height: 125px;
+   }
+   .alinearItems{
+     display: block;
+   }
+  .alinearItems a{
+    margin: auto;
+  }
+  .form1{
+    display: table;
+    margin-top: 5px;
+
+  }
 }
