@@ -6,19 +6,21 @@
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="css/principal.css">
     <link href="https://fonts.googleapis.com/css?family=Allerta|Courgette|Lora|Rufina" rel="stylesheet">
+    <!-- viewport es el area visible del navegador
+     content = el ancho es el ancho del dispositivo no el de la resolucion-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
   </head>
   <body>
     <section id="CintaPrincipal" class="portada"> <!-- cinta principal -->
       <header id="header contenedor" >
         <!-- logotipo -->
-        <nav class="menu"><!--barra de navegacion -->
+        <span class="burger-button icon-menu" id="burger-button"></span>
+        <nav class="menu" id="menu"><!--barra de navegacion -->
           <ul>
             <li>
               <a href="index.html">Home</a>
             </li>
             <li>
-            <!-- para que se abra en otra pestaña
-              <a href="portafolio.html" target="_blank">Portafolio</a> -->
               <a href="portafolio.html">Portafolio</a>
             </li>
             <li>
@@ -89,5 +91,20 @@
 
         <h5 class="titulo6">Todos los derechos reservados by JuantaDev</h5>
       </footer>
+      <!-- Aqui va el JS -->
+      <script type="text/javascript">
+          // identificar que elementos son interactivos
+          var $burgerButton = document.getElementById('burger-button');
+          var $menu = document.getElementById('menu');
+          // escuchar un touch en Boton
+          // $burgerButton.addEventListener(que evento, que queremos hacer)
+          $burgerButton.addEventListener('touchstart', toggleMenu);
+
+          function toggleMenu(){
+            $menu.classList.toggle('active')
+          }
+
+
+      </script>
   </body>
 </html>
