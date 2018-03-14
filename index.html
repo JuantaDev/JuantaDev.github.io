@@ -56,7 +56,7 @@
             </p>
           </article>
           <article class="articulo">
-            <img class="imagen" src="imagenes/perfil.jpg" alt="Perfil">
+            <img class="imagen" data-src="imagenes/perfil.jpg" alt="Perfil">
           </article>
 
     </section>
@@ -65,7 +65,7 @@
     <footer class="footer ">
       <div class="alinearItems contenedor">
         <div class="contacto alinearFilas">
-            <img src="imagenes/logoJdev.png"  alt="Logo de JuantaDev" class="centrar logotipo">
+            <img data-src="imagenes/logoJdev.png"  alt="Logo de JuantaDev" class="centrar logotipo">
             <a href="tel: +502 30959111"><strong>Teléfono: </strong><span>30959111</span class="centrar"> </a>
             <a href="mailto: juanta.dev@gmail.com"> <strong>E-mail: </strong><span>juanta.dev@gmail.com </span> </a>
         </div>
@@ -91,19 +91,46 @@
 
         <h5 class="titulo6">Todos los derechos reservados by JuantaDev</h5>
       </footer>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.js">
+
+      </script>
       <!-- Aqui va el JS -->
       <script type="text/javascript">
-          // identificar que elementos son interactivos
-          var $burgerButton = document.getElementById('burger-button');
-          var $menu = document.getElementById('menu');
+       var consulta = window.matchMedia('(max-width: 800px)');
+       consulta.addListener(mediaQuery);
+
+       // identificar que elementos son interactivos
+       var $burgerButton = document.getElementById('burger-button');
+       var $menu = document.getElementById('menu');
+       function toggleMenu(){
+         $menu.classList.toggle('active')
+       };
+
+        // Media Querys JS
+        // si es de 0 a 800 pxles
+        function mediaQuery(){
+       if(consulta.matches){
+          console.log('Se cumple la condicion')
+
           // escuchar un touch en Boton
           // $burgerButton.addEventListener(que evento, que queremos hacer)
           $burgerButton.addEventListener('touchstart', toggleMenu);
 
-          function toggleMenu(){
-            $menu.classList.toggle('active')
-          }
+   }else{
+           console.log('No se cumple la condicion')
+             $burgerButton.removeEventListener('touchstart', toggleMenu);
+       }
+     }
+    mediaQuery();
 
+
+      // lazy loading
+      var bLazy = new Blazy({
+      // agregamos selector a los d tipo img y se aplica a
+      // quienes se les puso data-src
+        selector: 'img'
+            });
 
       </script>
   </body>
