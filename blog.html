@@ -2,12 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>JuantaDevBlog</title>
+    <title>JuantaDevPortafolio</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="css/principal.css">
     <link href="https://fonts.googleapis.com/css?family=Allerta|Courgette|Lora" rel="stylesheet">
   </head>
-  <body>
+  <body id="body">
     <section id="CintaPrincipal"> <!-- cinta principal -->
       <header id="header" class="barraPrincipal" >
         <!-- logotipo -->
@@ -17,8 +17,6 @@
               <a href="index.html">Home</a>
             </li>
             <li>
-            <!-- para que se abra en otra pestaña
-              <a href="portafolio.html" target="_blank">Portafolio</a> -->
               <a href="portafolio.html">Portafolio</a>
             </li>
             <li>
@@ -31,40 +29,65 @@
 
     </section>
 
-    <section id="Blog" class="">
-         <h2 class="titulo4">Blog</h2>
-
-    </section>
-
-    <!-- footer -->
-    <footer class="footer">
-      <div class="alinearItems">
-        <div class="contacto alinearFilas">
-            <img src="imagenes/logoJdev.png"  alt="Logo de JuantaDev" class="centrar">
-            <a href="tel: +502 30959111"><strong>Teléfono: </strong><span>30959111</span class="centrar"> </a>
-            <a href="mailto: juanta.dev@gmail.com"> <strong>E-mail: </strong><span>juanta.dev@gmail.com </span> </a>
+    <section id="Blog" class="contenedor contenido  ">
+      <article class="principalItem">
+        <img  width="1000px" src="imagenes/zonaconfort.jpg" alt="">
+        <a href="https://medium.com/@juantadev/c%C3%B3mo-salir-de-la-zona-de-confort-22a87a4243f2">
+        <div class="textoItemPrincipal">
+          <h4>¿Cómo vencer la zona de Confort?</h4>
+          <div class="fecha">
+              <span>Febrero 2018</span>
+          </div>
         </div>
-         <!-- comentario -->
-          <form  id="form1" class="form1">
-                <div class="alinearFilas">
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" required="" name="nombre" placeholder="poné tu nombre" id="nombre">
-                  <label for="email">E-mail</label>
-                  <input type="email" required=""  name="email" id="email" placeholder="poné tu email">
-                </div>
+        </a>
+      </article>
+    </section>
+    <section id="ItemsBlog" class="SeccionPrincipal ordenItems contenedor">
+      <article class="nuevoItem">
+          <img  class="imagenP" src="imagenes/git.jpg">
+          <div class="textoItems">
+              <a href="https://medium.com/@juantadev/control-de-versiones-314208f89136">
+            <h4 >¡Control de Versiones?</h4>
+            </a>
+              <div class="fecha">
+                <span>Enero 2018</span>
+            </div>
+          </div>
 
-               <div class="alinearFilas">
-                 <label for="comentarios">Comentarios</label>
-                 <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
-                 <!-- boton para enviar infoa servidor -->
-                 <input class="boton" type="submit" name="" value="Enviar"/>
-              </div>
-          </form>
+      </article>
 
-      </div>
+      <article class="nuevoItem">
+          <img  class="imagenP" src="imagenes/resiliencia.jpg">
 
+          <div class="textoItems">
+          <a href="https://medium.com/@juantadev/resiliencia-641fcbe13b30">
+            <h4 >¿Resiliencia?</h4>
+            <div class="fecha">
+              <span>Octubre 2017</span>
+          </div>
+          </div>
+          </a>
+     </article>
+     <article class="nuevoItem">
+        <img  class="imagenP" src="imagenes/AdaLov.jpg">
+        <div class="textoItems">
+          <a href="https://medium.com/@juantadev/ada-lovelace-londres-1815-1852-13a2c48f8c83">
+           <h4 >Ada Lovelace(Londres, 1815–1852)</h4>
+           <div class="fecha">
+             <span>Octubre 2017</span>
+         </div>
+         </div>
+      </a>
+    </article>
+   </section>
 
-        <h5 class="titulo6">Todos los derechos reservados by JuantaDev</h5>
+<!-- footer -->
+<section id="footer">
+      <footer class="footer">
       </footer>
+      <div class="derechos">
+        <h5 class="titulo6">Todos los derechos reservados by JuantaDev</h5>
+      </div>
+ </section>
   </body>
 </html>
