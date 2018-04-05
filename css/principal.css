@@ -289,8 +289,11 @@ section h2 .titulo4{
 /* Responsive Desing   */
 
 /* Media Query para contenedor*/
-@media screen and (max-width: 800px){
-
+@media screen and (min-width: 800px){
+  .burger-button{
+    display: none;
+    border: 1px solid red;
+  }
    .titulo{
      font-size: 75px;
    }
@@ -400,7 +403,8 @@ header{
 @media screen and (max-width:375px){
 
    .menu{
-     position: absolute;
+     /* position: absolute; */
+    position: fixed;
      left: 0;
      right: 0;
      top: 0;
