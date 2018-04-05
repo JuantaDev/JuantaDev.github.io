@@ -2,10 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>JuantaDevPortafolio</title>
+    <title>JuantaDev</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="css/principal.css">
-    <link href="https://fonts.googleapis.com/css?family=Allerta|Courgette|Lora" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Courgette|Lora|Rufina" rel="stylesheet">
+    <!-- viewport es el area visible del navegador
+     content = el ancho es el ancho del dispositivo no el de la resolucion-->
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
   </head>
   <body>
     <section id="CintaPrincipal" > <!-- cinta principal -->
@@ -32,26 +35,24 @@
           </ul>
         </nav>
       </header>
-
-    </section>
-
-    <section id="Portafolio" class="contenedor">
-         <h2 class="titulo4">Portafolio</h2>
-    </section>
-
-    <section id="ItemsPortafolio" class="SeccionPrincipal ordenItems contenedor">
+  <section class="contenedorParalax">
+    <figure class="avatar" id="avatar">
+      <img src="imagenes/avatar.png" alt="" width="200px">
+    </figure>
+  </section>
+  <section class="contenido">
 
   </section>
 
 
-
-
     <!-- footer -->
-    <footer class="footer">
-      <div class="alinearItems">
+    <footer class="footer ">
+      <div class="alinearItems contenedor">
         <div class="contacto alinearFilas">
-          <h5>Haz clic para llamar o enviarme un correo! </h5>
-         <img src="imagenes/Logo.png"  alt="Logo de JuantaDev" class="centrar logotipo" width="125px">
+            <h5>Haz clic para llamar o enviarme un correo! </h5>
+            <a href="index.html">
+           <img data-src="imagenes/Logo.png"  alt="Logo de JuantaDev" class="centrar logotipo" width="125px">
+           </a>
             <a href="tel: +502 30959111"><strong>Teléfono: </strong><span>35099111</span class="centrar"> </a>
             <a href="mailto: juanta.dev@gmail.com"> <strong>E-mail: </strong><span>juanta.dev@gmail.com </span> </a>
         </div>
@@ -68,14 +69,25 @@
                  <label for="comentarios">Comentarios</label>
                  <textarea name="comentarios" id="comentarios" rows="7" cols="30"></textarea>
                  <!-- boton para enviar infoa servidor -->
-                 <input class="botonEnviar"type="submit" name="" value="Enviar"/>
+                 <input type="submit" name="" value="Enviar"/>
               </div>
           </form>
 
       </div>
       </footer>
-      <div class="derechos">
-        <h5 class="titulo6">Todos los derechos reservados by JuantaDev</h5>
-      </div>
-  </body>
-</html>
+    </body>
+    <script type="text/javascript">
+    // selector para mi imagen por el id
+    const $avatar = document.getElementById('avatar');
+    // window.addEventListener('que quiero detectar',quehacer){
+      window.addEventListener('scroll',function(e){
+          // console.log(e);
+          console.log(window.scrollY);
+          // llamar al objeto.style.propiedad
+          var position = 54+window.scrollY;
+          // $avatar.style.marginTop = window.scrollY + 'px';
+          $avatar.style.transform = 'rotate('+position*0.02+'deg)';
+
+      });
+    </script>
+    </html>
