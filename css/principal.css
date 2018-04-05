@@ -29,6 +29,16 @@ body{
 .logotipo{
   border: 1px solid black;
   border-radius: 9px;
+  transition: .3s;
+}
+.logotipo:hover{
+  0%{
+
+  }50%{
+    transform: translateX(15px);
+  }100%{
+    transform: translateX(0px);
+  }
 }
 /* menu de navegacion */
 .menu{
@@ -38,6 +48,7 @@ body{
   display: inline-block;
   right: 55px;
   position: absolute;
+  /* position: fixed; */
 }
 .menu li{
   display: inline-block;
@@ -61,6 +72,40 @@ text-shadow: 0 0 20px #dddddd;
     border: 2px solid white;
     text-align: center;
     background-color: #ffffffa1;
+    transition: .3s;
+      animation: 2s cuadrado 1;
+    /*animation tiempoTarda nombreAnimacion #iteraciones  */
+    /* animation: 5s cuadrado infinite; */
+}
+.divPrincipal:hover{
+  /* animation: 2s cuadrado infinite; */
+}
+
+/*       ////////// animacionnes  */
+@keyframes cuadrado {
+     /* 0 % 100}5 */
+    /* from to  */
+    /* from{
+      border: 1px solid res;
+    }to{
+      border: 1px solid black;
+    } */
+0%{
+
+}50%{
+  transform: translateY(15px);
+}100%{
+  transform: translateY(0px);
+}
+}
+@keyframes llave {
+  0%{
+
+  }50%{
+    transform: translateX(15px);
+  }100%{
+    transform: translateX(0px);
+  }
 }
 /* ---titulos --- */
 .titulo{
@@ -123,7 +168,11 @@ section{
     border-radius: 22px;
 
 }
-
+.imagen:hover{
+  background; url('../imagenes/AdaLov.jpg');
+  width: 350px;
+  height: 350px;
+}
 
 
 /* footer */
@@ -163,6 +212,13 @@ padding: 40px;
   font-size: large;
   font-weight: bold;
 
+}
+
+.contacto h5{
+      margin: 5px;
+      color: #304a5c;
+      font-size: large;
+      font-weight: bold;
 }
 .botonEnviar:hover{
  background: black;
@@ -529,4 +585,18 @@ padding: 4px 25px 10px 25px;
 .menu a:hover{
 /*           donde se ubica sombra, x, y, difuminado y color  */
   box-shadow: inset 10px 10px 30px white ;
+}
+
+
+/* Sobre mi  */
+.contenedorParalax{
+  height: 100vh;
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.avatar{
+  display: inline-block;
+  margin-top: 150px;:
+  transition: .1s;
 }
