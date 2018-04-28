@@ -20,11 +20,11 @@ body{
 /* portada */
 .portada{
   background-size: cover;
-  padding: 5px;
-  /* margin-bottom: 70px; */
-  height: 600px;
-  background-image: url('../imagenes/fondo.jpg');
+  /* padding: 5px; */
+  /* height: 500px; */
+   height: 800px;
   background-size: cover;
+  background-image: url('../imagenes/fondo2.jpg');
 }
 .logotipo{
   border: 1px solid black;
@@ -46,9 +46,10 @@ body{
   /* border: 2px solid red; */
   border-collapse: collapse;
   display: inline-block;
-  right: 55px;
+  /* right: 55px; */
   position: absolute;
   /* position: fixed; */
+  text-align: right;
 }
 .menu li{
   display: inline-block;
@@ -64,16 +65,19 @@ color: #f5f7f2;
 font-weight: 600;
 font-family: monospace;
 text-shadow: 0 0 20px #dddddd;
+
 }
 
 /* contenido de portada   */
 .divPrincipal{
     margin-top: 18%;
+    /* margin-top: 25%; */
     border: 2px solid white;
     text-align: center;
     background-color: #ffffffa1;
     transition: .3s;
       animation: 2s cuadrado 1;
+      height: 160px;
     /*animation tiempoTarda nombreAnimacion #iteraciones  */
     /* animation: 5s cuadrado infinite; */
 }
@@ -112,13 +116,15 @@ text-shadow: 0 0 20px #dddddd;
   font-size: 100px;
   font-family: 'Rufina', serif;
   margin: 0px;
-  color:black;
+  /* color:black; */
+  color: #004A7C;
   transform: rotate(-0.5deg);
 }
 .titulo2{
     font-size: 25px;
     /* color: #f5f7f2; */
-    color:black;
+    /* color:black; */
+    color:#7a7777;  */gris oscuro
     text-align: center;
     margin: 0px;
 }
@@ -149,7 +155,7 @@ section{
   font-size: 55px;
   font-family: 'Lora', serif;
   margin: 0px 0px 0px 0px;
-  color: #9E322A;
+  color: #7a7777;
   padding-top: 70px;
 }
 .articulo{
@@ -180,25 +186,32 @@ section{
 .footer{
   /* background-color: #a36d53; */
   /* background-color: #9E322A; */
-background-color: #e8e9ea;
+/* background-color: #e8e9ea; */
+background-color:  #000000;
 padding: 40px;
-
+height: 300px;
 }
 .footer input{
   margin: 2px;
 }
 .footer label{
-  color: #304a5c;
+  color: #F2F2F2;
   font-size: large;
   font-weight: bold;
+}
+.redesSociales{
+  text-align: center;
+  padding-left: 0px;
+
+}
+.redesSociales li{
+  display: inline-block;
 }
 /* .footer .contenedor {
     display: flex;
     justify-content: space-between;
 } */
-.derechos{
-  background-color: #272F32;
-}
+
 .contacto{
 
     display: flex;
@@ -207,16 +220,17 @@ padding: 40px;
 }
 .contacto a{
   text-decoration: none;
-  color: #304a5c;
+  color: #F2F2F2;
   margin: 10px 10px 10px 0px;
   font-size: large;
-  font-weight: bold;
+  /* font-weight: bold; */
 
 }
 
+
 .contacto h5{
       margin: 5px;
-      color: #304a5c;
+      color: #F2F2F2;
       font-size: large;
       font-weight: bold;
 }
@@ -257,8 +271,8 @@ padding: 40px;
 
 height: 40px;
 width: auto;
-/* background-color:#9E322A; */
-background-color:#304A5C;
+background-color:#004A7C;
+width: -webkit-fill-available;
 }
 
 section h2 .titulo4{
@@ -285,11 +299,19 @@ section h2 .titulo4{
   z-index: 3;
 }
 
+.bredessociales{
+  height: 20px;
+  cursor: pointer;
+  color: #004A7C;
+  font-size: 35px;
+  padding: 0px 20px 0px 20px;
+}
+
 
 /* Responsive Desing   */
 
 /* Media Query para contenedor*/
-@media screen and (min-width: 800px){
+@media screen and (max-width: 800px){
   .burger-button{
     display: none;
     border: 1px solid red;
