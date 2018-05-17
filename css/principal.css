@@ -320,15 +320,17 @@ section h2 .titulo4{
      font-size: 75px;
    }
    .divPrincipal{
-     margin-top: 8%;
+     margin-top: 15%;
+     height: 140px;
      /* width: auto; */
 
    }
    .portada{
-     height: auto;
+     height: 350px;
    }
    .SeccionPrincipal{
      height: auto;
+     margin: 30px;
    }
    .articulo {
 
@@ -352,6 +354,10 @@ section h2 .titulo4{
    }
    .footer textarea{
      height: 50px;
+   }
+   .alinearItems {
+     margin-top: 5%;
+     margin-bottom: 5%;
    }
 }
 
