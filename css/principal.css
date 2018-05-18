@@ -365,6 +365,9 @@ section h2 .titulo4{
 
 /*  ----------------------------------- -------------------
 ----------------------   Blog ------------- ------------------------------      */
+.titleBlog {
+  display: none;
+}
 .principalItem{
   height: 500px;
   margin: 10px;
@@ -639,12 +642,16 @@ header{
      left: -105%;
      /* transition en cuanto tiempo quiero que se mueva 300ms o 0.3s */
      transition: 300ms;
+     background: #004a7cf2;
    }
    .menu.active{
      left: 0;
    }
    .menu ul{
      padding: 0;
+   }
+   .barraPrincipal{
+     height: 345px;
    }
 
    .menu li{
@@ -691,4 +698,43 @@ header{
     margin-top: 5px;
 
   }
+  .portadaSimple{
+    height: 75px;
+    background-color: #004a7c;
+  }
+
+  .titleBlog {
+    display: block;
+    text-align: center;
+    color: #fefefe;
+    font-size: 25px;
+}
+  .imageOne {
+    width: 345px;
+    height: 246px;
+    margin: 2px;
+}
+.principalItem {
+    height: 325px;
+    width: 345px;
+}
+.textoItemPrincipal {
+    bottom: 15px;
+    padding: 1px 12px 15px 13px;
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    width: 308px;
+}
+.textoItemPrincipal h4 {
+  font-size: 18px;
+  color: #004a7c;
+  margin: 20px;
+  text-decoration-line: underline;
+}
+.textoItems a {
+  color: #004a7c;
+}
+
+user agent stylesheet
+h4 {
 }

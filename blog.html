@@ -15,6 +15,7 @@
       <header id="header contenedor " >
         <!-- logotipo -->
         <span class="burger-button icon-menu" id="burger-button"></span>
+        <h2 class="titleBlog">Bienvenidos a mi Blog!</h2>
         <nav class="menu barraPrincipal" id="menu"><!--barra de navegacion -->
           <ul>
             <li>
@@ -96,4 +97,60 @@
       </div>
  </section>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.js">
+
+  </script>
+  <!-- Aqui va el JS -->
+  <script type="text/javascript">
+   var consulta = window.matchMedia('(max-width: 800px)');
+   consulta.addListener(mediaQuery);
+
+   // identificar que elementos son interactivos
+   var $burgerButton = document.getElementById('burger-button');
+   var $menu = document.getElementById('menu');
+   function toggleMenu(){
+     $menu.classList.toggle('active') //toggle rebota active
+   };
+   function showMenu(){
+     $menu.classList.add('active')
+   };
+   function hideMenu(){
+     $menu.classList.remove('active')
+   };
+
+    // Media Querys JS
+    // si es de 0 a 800 pxles
+    function mediaQuery(){
+   if(consulta.matches){
+      console.log('Se cumple la condicion')
+
+      // escuchar un touch en Boton
+      // $burgerButton.addEventListener(que evento, que queremos hacer)
+      $burgerButton.addEventListener('touchstart', toggleMenu);
+
+}else{
+       console.log('No se cumple la condicion')
+         $burgerButton.removeEventListener('touchstart', toggleMenu);
+   }
+ }
+mediaQuery();
+
+
+  // lazy loading
+  var bLazy = new Blazy({
+  // agregamos selector a los d tipo img y se aplica a
+  // quienes se les puso data-src
+    selector: 'img'
+        });
+
+  //Gestos touch
+  var $body = document.body;
+
+  var gestos = new Hammer($body);
+  gestos.on('swipeleft', hideMenu);
+  gestos.on('swiperight', showMenu);
+  </script>
 </html>
