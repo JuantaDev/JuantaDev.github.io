@@ -473,7 +473,7 @@ padding: 4px 25px 10px 25px;
 @media screen and (max-width: 800px){
   .burger-button{
     display: none;
-    border: 1px solid red;
+
   }
    .titulo{
      font-size: 75px;
@@ -715,7 +715,7 @@ header{
     margin: 2px;
 }
 .principalItem {
-    height: 325px;
+    height: 330px;
     width: 345px;
 }
 .textoItemPrincipal {
@@ -733,6 +733,9 @@ header{
 }
 .textoItems a {
   color: #004a7c;
+}
+.burger-button{
+    display: inline-block;
 }
 
 user agent stylesheet
