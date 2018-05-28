@@ -457,8 +457,138 @@ padding: 4px 25px 10px 25px;
   margin-top: 150px;:
   transition: .1s;
 }
+/*  -----------------------------------------------------------------
+--------------------------------------------------Portafolio----------------*/
+.contenedorP{
+  margin-top: 20px;
+  /* 800 a 1024 */
+  display: grid;
+  /* tamaño de columna tamañocol2 tamcol3*/
+  /* grid-template-columns: 200px 200px 200px; */
+  /* dinamico */
+
+  /* grid-template-columns: 25% 200px 25%; */
+  /*  300px 300px*/
+  /* grid-template-rows: 100px 125px; */
+
+  /* grid-template: filas/columnas;/ */
+  /* grid-template: 300px 100px 100px/ 100%; */
+
+  /* border: 1px solid red; */
+  /* grid-template: 100px 100px/repeat(3, minmax(200px,1fr));
+  grid-gap:10px;
+  grid-template-areas: "inicio inicio inicio"
+                       "left contenido contenido"
+                       "fin fin fin"; */
+  /* grid-template-columns: repeat(7,1fr);
+  grid-template-rows: (repeat (5,1fr)); */
+
+  /* grid-template-columns:/**/
+  /* 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+                    /* [nombre de linea]  */
+  grid-template-columns: [c1] 1fr [c2] 1fr [c3] 1fr [c4] 1fr [c5] 1fr [c6]  1fr [c7] 1fr [c8];
+  /* grid-template-rows: [f1] 100px [f2] 100px [f3] 100px [f4] 100px [f5] ; */
+  grid-template-rows: [f1] 1fr [f2] 1fr [f3] 1fr [f4] 1fr [f5] ;
+  grid-gap:5px;
+  height: 100vh;
+  width: 150vh;
+  /* grid-template-areas: "first first first first first first first"
+                       "first first first first first first first"
+                       "first first first first first first first"
+                       "second second second thirt thirt fourt fourt"
+                       "second second second thirt thirt five six"; */
 
 
+}
+
+.item{
+  background: white;
+  /* padding: 10px; */
+  border: 1px solid red;
+  display: grid;
+  /* grid-template: 100px 100px/50% 22% 22% ; */
+  /* grid-template: 100px 100px/1fr 1fr 1fr; */
+  /* grid-template: 100px 100px/repeat(3, 1fr); */
+
+  /* grid-column-gap: 30px;
+  grid-row-gap: 50px; */
+  /* grid-gap:filas columnas */
+
+}
+.itemS .itemS{
+  background: yellow;
+}
+.item:nth-of-type(1){
+  /* background-image: url("../imagenes/pbit.jpg"); */
+  /* grid-column-start: 1;
+  grid-column-end: 8; */
+  /*  */
+  /* grid-row-start: 1; */
+  /* grid-row-end: 4; */
+  /* grid-row: linea en la que inicia /   #espacios q ocupa
+  grid-row: 1/span 3;*/
+
+  grid-column: c1/c8;
+  grid-row: f1/f4;
+}
+.imagen1{
+  width: 500px;
+  height: 500px;
+}
+.item:nth-of-type(2){
+  /* background: red;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6; */
+
+  grid-column: c1/c4;
+  grid-row: f4/f6;
+}
+.item:nth-of-type(3){
+  /* background: yellow;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6; */
+  grid-column: c4/c6;
+  grid-row: f4/f6;
+}
+.item:nth-of-type(4){
+  /* background: yellow;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 4;
+  grid-row-end: 5; */
+  grid-column: c6/c8;
+  grid-row: f4/f5;
+}
+.item:nth-of-type(5){
+  /* background: yellow;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 6; */
+  grid-column: c6/c7;
+  grid-row: f5/f6;
+}
+.item:nth-of-type(6){
+  /* background: yellow;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 5;
+  span:1; */
+
+  grid-column: c7/c8;
+  grid-row: f5/f6;
+}
+/* .itemP:nth-of-type(1){
+  background: blue;
+  display: inline-grid;
+  /* grid-template: 300px/1000px; */
+  /* grid-template: 300px/repeat(3, minmax(200px,1fr)); */
+
+/* } */
 /*-----------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------*/
@@ -741,3 +871,11 @@ header{
 user agent stylesheet
 h4 {
 }
+
+
+
+
+
+.contenedor.productos.pequeño
+<div class="contenedor productos mediano"> ...</div>
+<div class="contenedor productos grande"> ... </div>

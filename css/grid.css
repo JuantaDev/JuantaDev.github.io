@@ -1,0 +1,21 @@
+body{
+  font-family: Arial;
+}
+.contenedor{
+  /* 800 a 1024 */
+  display: grid;
+  /* tamaño de columna tamañocol2 tamcol3*/
+  /* grid-template-columns: 200px 200px 200px; */
+  /* dinamico */
+  grid-template-columns: 25% 200px 25%;
+  /*  300px 300px*/
+  grid-template-rows: 300px 300px;
+
+  /* border: 1px solid red; */
+}
+
+.item{
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid black;
+}
