@@ -138,7 +138,7 @@ text-shadow: 0 0 20px #dddddd;
 }
 /* Sobre mi  */
 .SeccionPrincipal{
-  height: 600px;
+  height: 650px;
   background-color: #FFFFFF;
   display:  flex;
 
@@ -180,7 +180,17 @@ section{
   height: 350px;
 }
 
-
+/*------------------------------Formacion Academica-------------------*/
+.FormacionAcademica{
+  height: 300px;
+  background-color: #FFFFFF;
+  display:  block;
+  /* padding: 0px; */
+}
+.FormacionAcademica.contenedor{
+  background-color: aliceblue;
+}
+/*
 /*------------------------------- footer----------------------------- */
 
 .footer{
@@ -582,7 +592,7 @@ padding: 4px 25px 10px 25px;
   grid-column: c7/c8;
   grid-row: f5/f6;
 }
-/* .itemP:nth-of-type(1){
+.itemP:nth-of-type(1){
   background: blue;
   display: inline-grid;
   /* grid-template: 300px/1000px; */
